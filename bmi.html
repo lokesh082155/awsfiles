@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const weight = 85;
+    const height = 1.8;
+    let bmi = weight / [height * height];
+    console.log("bmi", bmi);
+
+    bmi < 18.5 ? console.log("underweight")
+      : bmi >= 18.5 && bmi <= 24 ? console.log("normal")
+        : bmi >= 25 && bmi <= 30 ? console.log("overweight")
+          : bmi >= 31 && bmi <= 35 ? console.log("obense")
+            : bmi >= 36 ? console.log("severly obense") : console.log("morbidily obense");
+  </script>
+</body>
+
+</html>

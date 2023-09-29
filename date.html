@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let todaydate = new Date()
+        console.log("tadaydate", todaydate);
+
+        let futuredate = new Date(2050, 4, 8, 10, 20, 30)
+        console.log("futuredate", futuredate);
+
+        //js date starts from jan 1,1970
+        let datemilli = new Date(8640000)
+        console.log("datemilli", datemilli);
+
+        let getyear = todaydate.getFullYear()
+        console.log("getyear", getyear);
+        let getmonth = todaydate.toLocaleString("month", { month: "long" })
+        console.log("getmonth", getmonth);
+        let gethour = todaydate.getHours()
+        console.log("gethour", gethour);
+        let getmin = todaydate.getMinutes()
+        console.log("getmin", getmin);
+        let getsec = todaydate.getSeconds()
+        console.log("getsec", getsec);
+    </script>
+</body>
+
+</html>
